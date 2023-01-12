@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>UserCars</title>
+      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+
+<body>
+      <header>
+            <div class="Name">
+                  <h1><a class="active" href="#">Trade your car online</a></h1>
+            </div>
+
+      </header>
+      <br>
+      <br>
+      <br>
+      <div class="content">
+            <h1> Hello !!! </h1>
+
+            <h2>
+                  <p> -------------------------------------</p>
+                  <p> Buy and sell an used car on this online platform</p>
+                  <p> freely, easily and wisely...</p>
+            </h2>
+      </div>
+      <br>
+      <br><br><br><br><br><br>
+      <div class="main">
+            <ul>
+                  <li><a href="/viewCar">View Cars</a></li>
+                  <li><a href="#form-start">Sell my car</a></li>
+            </ul>
+      </div>
+      <div class="form-start" id="form-start">
+            <div class="form-content">
+                  <h1>Sell your car 100% online.</h1>
+                  <h2>Get the best offer instantly from thousands of dealers</h2>
+                  <h2>Fast, Free and Easy</h2>
+            </div>
+            <section class="main-block-form" id="form">
+                  <h1>Add listing</h1>
+                  <form action="{{ url_for("formSubmissionStatus")}}" method="post">
+                        <hr>
+                        <input type="text" name="vin" id="vin" placeholder="VIN" required />
+
+                        <input type="text" name="body_type" id="body_type" placeholder="Body Type" required />
+
+                        <input type="text" name="city" id="city" placeholder="City" required />
+
+                        <input type="text" name="dealer_zip" id="dealer_zip" placeholder="Dealer zip" required />
+
+                        <input type="text" name="engine_type" id="engine_type" placeholder="Engine_type" required />
+
+                        <input type="text" name="exterior_color" id="exterior_color" placeholder="Exterior color" required />
+
+                        <input type="text" name="fueltank_volume" id="fueltank_volume" placeholder="Fuel tank volume"
+                              required />
+
+                        <input type="text" name="listing_date" id="listing_date" placeholder="Listing date" required />
+
+                        <input type="text" name="maximum_seating" id="maximum_seating" placeholder="Maximum Seating"
+                              required />
+
+                        <input type="text" name="mileage" id="mileage" placeholder="Mileage" required />
+
+                        <input type="text" name="model_name" id="model_name" placeholder="Model Name" required />
+
+                        <input type="text" name="owner_count" id="owner_count" placeholder="Owner Count" required />
+
+                        <input type="text" name="power" id="power" placeholder="Power" required />
+
+                        <input type="text" name="price" id="price" placeholder="Price" required />
+
+                        <input type="text" name="torque" id="torque" placeholder="Torque" />
+
+                        <input type="text" name="transmission" id="transmission" placeholder="Transmission" required />
+
+                        <input type="text" name="year" id="year" placeholder="Year" required />
+                        <br>
+                        <br>
+                        <hr>
+                        <div class="btn-block">
+                              <input type="reset" value="Clear">
+                              <button type="submit" href="/formSubmissionStatus">Submit</button>
+                        </div>
+                  </form>
+            </section>
+      </div>
+
+
+</body>
+
+</html>

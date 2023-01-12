@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ViewCars</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style_viewCar.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="Name">
+            <h1><a class="active" href="/">Trade your car online</a></h1>
+        </div>
+
+    </header>
+
+    <div><p>
+        Looking for an used car ??
+    </p></div>
+
+    <section class="form_vin" id="form_vin">
+        <h1>Search using Model Name</h1>
+        <form action="form_preferences" method="post">
+            <hr>
+              <select name="model_name" id="model_name" placeholder="model name" required>
+                <option value="">Model Name</option>
+                <option value="Corolla">Corolla</option>
+                <option value="Forte">Forte</option>
+                <option value="Grand Caravan">Grand Caravan</option>
+                <option value="4 Series">4 Series</option>
+                <option value="Civic">Civic</option>
+                <option value="Range Rover Velar">Range Rover Velar</option>
+                <option value="Sonata">Sonata</option>
+                <option value="Mustang">Mustang</option>
+                <option value="Accord">Accord</option>
+                <option value="Fusion Hybrid">Fusion Hybrid</option>
+            </select> 
+            <div class="btn-block">
+                <button type="submit" href="#carlist">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+
+    <section class="form_lid" id="form_listingid">
+        <h1>Search using Listing ID</h1>
+        <h4> For testing purpose - can use [ 266911050 ]</h4>
+        <form action="form_preferences" method="post">
+            <hr>
+            <input type="text" name="listing_id" id="listing_id" placeholder="Listing ID" required />
+            <div class="btn-block">
+                <button type="submit" href="#carlist">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="carlist"></section>
+
+
+    <section class="form_preferences" id="form_preferences1">
+        <h1>Search according to your preferences</h1>
+        <form action="form_preferences" method="post">
+            <hr>
+            <select name="Body Type" id="body_type" placeholder="Body Type" required>
+                <option value="">Body Type</option>
+                <option value="SUV / Crossover">'SUV / Crossover'</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Pickup Truck">Pickup Truck</option>
+                <option value="Van">Van</option>
+                <option value="Convertible">Convertible</option>
+                <option value="Minivan">Minivan</option>
+            </select>
+            <select name="Maximum seating" id="Maximum seating" placeholder="Maximum Seating" required>
+                <option value="">Maximum Seating</option>
+                <option value="2 seats">2</option>
+                <option value="3 seats">3</option>
+                <option value="4 seats">4</option>
+                <option value="5 seats">5</option>
+                <option value="6 seats">6</option>
+                <option value="7 seats">7</option>
+                <option value="8 seats">8</option>
+                <option value="9 seats">9</option>
+                <option value="10 seats">10</option>
+            </select> 
+           
+            <select name="Engine_type" id="engine_type" placeholder="Engine_type" required>
+                <option value="">Engine Type</option>
+                <option value="I4">I4</option>
+                <option value="V6">V6</option>
+                <option value="V6 Diesel">V6 Diesel</option>
+            </select>
+            <select name="Color" id="exterior_color" placeholder="Exterior color" required>
+                <option value="">Exterior Color</option>
+                <option value="Crystal White">Crystal White</option>
+                <option value="Agate Black Metallic">Agate Black Metallic</option>
+                <option value="Steel Blue Metallic">Steel Blue Metallic</option>
+                <option value="Black">Black</option>
+                <option value="Blue">Blue</option>
+            </select>
+           
+            <div class="btn-block">
+                <button type="submit" href="#carlist">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <section class="form_preferences" id="form_preferences">
+        <h1>Search according to your preferences</h1>
+        <form action="form_preferences" method="post">
+            <hr>
+            <select name="Body Type" id="body_type" placeholder="Body Type" required>
+                <option value="">Body Type</option>
+                <option value="SUV / Crossover">'SUV / Crossover'</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Pickup Truck">Pickup Truck</option>
+                <option value="Wagon' 'Coupe">Wagon' 'Coupe</option>
+                <option value="Van">Van</option>
+                <option value="Convertible">Convertible</option>
+                <option value="Minivan">Minivan</option>
+            </select>
+
+            <select name="Transmission" id="Transmission" placeholder="Transmission" required>
+                <option value="">Transmission</option>
+                <option value="A">Automatic</option>
+                <option value="CVT">CVT</option>
+                <option value="M">Manual</option>
+                <option value="Dual Clutch">Dual Clutch</option>
+            </select>
+
+            <select name="Fuel Type" id="FuelType" placeholder="FuelType" required>
+                <option value="">FuelType</option>
+                <option value="Gasoline">Gasoline</option>
+                <option value="Electric">Electric</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Flex Fuel Vehicle">Flex Fuel Vehicle</option>
+                <option value="Biodiesel">Biodiesel</option>
+            </select>
+
+            <div class="btn-block">
+                <button type="submit" href="#carlist">Submit</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
