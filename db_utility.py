@@ -4,8 +4,8 @@ import pandas as pd
 import random
 
 AWS_REGION = 'us-east-1'
-ACCESS_KEY_ID = 'AKIAVLOQ2XROMXGOYF4L'
-ACCESS_KEY = 'lBOO9aYvkXYFz2yrNugjaGkWCPx443kfQMa0jPcj'
+ACCESS_KEY_ID = ''
+ACCESS_KEY = ''
 QUERY_FORMAT = "{}"
 DOMAIN_NAME = "Used_Cars_APP"
 FILTER_LOGIC_PATTERN = "{} = \'{}\' "
