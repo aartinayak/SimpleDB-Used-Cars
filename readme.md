@@ -1,4 +1,4 @@
-# CSCI-621-USED_CARS
+# List It - Preloved car sales
 This is a project based dataset of Used Cars and rendering the listings based on the filters. In this project, we have used SimpleDB as our database, Flask for the backend and HTML Jinja Templates and CSS for Frontend. The main motive of the project is to dynamically fetch all the information from the SimpleDB Database and display it with interactive properties. 
 
 ## Usability
@@ -37,10 +37,3 @@ This is a project based dataset of Used Cars and rendering the listings based on
 1. boto.sdb
 2. pandas
 3. Flask Virtual Enviornment
-
-## Collaborators:
-1. Amanraj Lnu 
-2. Aarti Nayak
-3. Kruthi Nagabhushan
-4. Swetna Tribuvan
-
